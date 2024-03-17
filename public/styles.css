@@ -1,0 +1,929 @@
+/* Reset */
+
+/* Modern reset: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Prevent zooming when orientation changes on some iOS devices */
+
+html {
+  -moz-text-size-adjust: none;
+       text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Variables */
+
+/* 
+Dela Gothic One
+https://fonts.google.com/specimen/Dela+Gothic+One
+*/
+
+@font-face {
+  font-family: 'Dela Gothic One';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url('/fonts/dela-gothic-one-regular.ttf') format('ttf');
+}
+
+/*
+Poppins
+https://fonts.google.com/specimen/Poppins
+*/
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-thin.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-thin-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-extra-light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-extra-light-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  src: url('/fonts/poppins-light-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-medium-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-semi-bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-semi-bold-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-bold-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-extra-bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-extra-bold-italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-black.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url('/fonts/poppins-black-italic.ttf') format('ttf');
+}
+
+/*
+Inconsolata 
+https://fonts.google.com/specimen/Inconsolata
+*/
+
+@font-face {
+  font-family: 'Inconsolata';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url('/fonts/inconsolata-regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url('/fonts/inconsolata-bold.ttf') format('ttf');
+}
+
+/* Global variables */
+
+:root {
+  --grid-max-width: 91.25rem;
+  --grid-gutter: var(
+        --space-s-s,
+        clamp(1rem, calc(0.93rem + 0.35vw), 1.25rem)
+    );
+  --grid-columns: 12;
+  --border-radius: 0;
+  --border-width: 1px;
+  --border-style: solid;
+  --border: var(--border-width) var(--border-style) var(--color-black);
+  /* Fonts */
+  --tracking: -0.05ch;
+  --tracking-s: -0ch;
+  /* Animations */
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 200ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+}
+
+/* Defaults */
+
+/* 
+Global styles 
+
+Low-specificity, global styles that apply to the whole 
+project: https://cube.fyi/css.html
+*/
+
+body {
+  color: var(--color-black);
+  background: var(--color-ash);
+  font-size: var(--size-step-1);
+  font-family: var(--font-base);
+  line-height: 1.4;
+  letter-spacing: var(--tracking);
+}
+
+/* Base typesetting */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 0.84;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-s);
+}
+
+h1 {
+  font-size: var(--size-step-5);
+}
+
+h2 {
+  font-size: var(--size-step-4);
+}
+
+h3 {
+  font-size: var(--size-step-3);
+}
+
+/* Set line lengths */
+
+p,
+li,
+blockquote:not([class]) {
+  max-inline-size: 50ch;
+}
+
+h1,
+h2,
+h3 {
+  max-inline-size: 20ch;
+}
+
+/* More generic elements */
+
+blockquote:not([class]) {
+  font-family: var(--font-base);
+  font-size: var(--size-step-2);
+}
+
+/* Markdown blockquote:not([class]) isn't ideal so we presume the person quoted is the last p */
+
+blockquote:not([class]) p:last-of-type {
+  font-family: var(--font-base);
+  font-size: var(--size-step-1);
+  font-weight: normal;
+  font-style: italic;
+}
+
+code {
+  font-family: var(--font-mono), monospace;
+  color: var(--color-ash);
+  background-color: var(--color-black);
+  border-radius: var(--border-radius);
+  padding: 0 var(--space-xxs);
+}
+
+svg {
+  height: 2ex;
+  width: auto;
+  flex: none;
+}
+
+[role="list"] {
+  padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+  color: currentcolor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 2px solid;
+  outline-offset: 0.3ch;
+}
+
+:target {
+  scroll-margin-top: 2ex;
+}
+
+main:focus {
+  outline: none;
+}
+
+/* Base selection styles that invert whatever colours are rendered */
+
+::-moz-selection {
+  background: var(--color-black);
+  color: var(--color-ash);
+}
+
+::selection {
+  background: var(--color-black);
+  color: var(--color-ash);
+}
+
+button {
+  font-family: inherit;
+  display: inline-block;
+  box-sizing: inline-block;
+  inline-size: auto;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  outline: none;
+  margin-top: 2em;
+  border-width: var(--border-width);
+}
+
+button:hover {
+  transition: border-width var(--transition-base);
+  color: var(--color-white);
+  background: var(--color-black);
+  text-decoration: none;
+  outline: none;
+  opacity: 0.87;
+}
+
+button:disabled {
+  color: var(--color-ash);
+  background: var(--color-grey);
+  cursor: not-allowed;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 var(--space-m-2xl);
+}
+
+.content {
+  margin: 0 auto;
+  font-size: 2rem;
+  line-height: 1.4em;
+}
+
+@media (max-width: 500px) {
+  .content {
+    font-size: 1.8rem;
+  }
+}
+
+/*
+/* CLUSTER
+/* https://every-layout.dev/layouts/cluster/
+/* 
+/* <div class="cluster" role="list">
+/*   <div role="listitem"><!-- child --></div>
+/*   <div role="listitem"><!-- child --></div>
+/*   <div role="listitem"><!-- etc --></div>
+/* </div>
+*/
+
+.cluster {
+  /* Set the Flexbox context */
+  display: flex;
+  /* Enable wrapping */
+  flex-wrap: wrap;
+  /* Set the space/gap */
+  gap: var(--space, 1rem);
+  /* Choose your justification (flex-start is default) */
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+  /* Choose your alignment (flex-start is default) */
+  align-items: var(--cluster-vertical-alignment, center);
+}
+
+/* AUTO GRID
+Related Every Layout: https://every-layout.dev/layouts/grid/
+More info on the flexible nature: https://piccalil.li/tutorial/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
+A flexible layout that will create an auto-fill grid with
+configurable grid item sizes
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-s-m)): This defines the space
+between each item.
+
+--grid-min-item-size (14rem): How large each item should be
+ideally, as a minimum.
+
+--grid-placement (auto-fill): Set either auto-fit or auto-fill
+to change how empty grid tracks are handled
+
+USAGE
+<ul class="grid" role="list">...</ul>
+<ul class="grid" role="list" data-rows="masonry" data-layout="50-50">...</ul>
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+        var(--grid-placement, auto-fill),
+        minmax(var(--grid-min-item-size, 16rem), 1fr)
+    );
+  gap: var(--grid-gutter, var(--space-s-l));
+}
+
+.grid[data-rows=masonry] {
+  grid-template-rows: masonry;
+  align-items: start;
+}
+
+.grid[data-layout='50-50'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50%, 26rem);
+}
+
+.grid[data-layout=thirds] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem,33%,20rem)
+
+}
+
+.grid[data-layout=twelfths] {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+/* 
+/* SIDEBAR
+/* More info: https://every-layout.dev/layouts/sidebar/
+/* A layout that allows you to have a flexible main content area
+/* and a "fixed" width sidebar that sits on the left or right.
+/* If there is not enough viewport space to fit both the sidebar
+/* width *and* the main content minimum width, they will stack
+/* on top of each other
+/* 
+/* CUSTOM PROPERTIES AND CONFIGURATION
+/* --gutter (var(--space-size-1)): This defines the space
+/* between the sidebar and main content.
+/* 
+/* --sidebar-target-width (20rem): How large the sidebar should be
+/* 
+/* --sidebar-content-min-width(50%): The minimum size of the main content area
+/* 
+/* EXCEPTIONS
+/* .sidebar[data-direction='rtl']: flips the sidebar to be on the right 
+*/
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l));
+}
+
+.sidebar > :first-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1;
+}
+
+.sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 50%);
+}
+
+/* 
+A flipped version where the sidebar is on the right
+*/
+
+.sidebar[data-direction='rtl'] {
+  flex-direction: row-reverse;
+}
+
+/*
+/* Stack Example:
+/*
+/* <div class="stack" space="3rem" role="list">
+/*   <h2><!-- heading label --></h2>
+/*   <div class="stack" space="1.5rem" role="list">
+/*     <div role="listitem"><!-- item 1 content --></div>
+/*     <div role="listitem"><!-- item 2 content --></div>
+/*     <div role="listitem"><!-- item 3 content --></div>
+/*   </div>
+/* </div>”
+*/
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack * {
+  margin-block: 0;
+}
+
+.stack * + * {
+  margin-block-start: var(--space, 1.5rem);
+}
+
+.stack:only-child {
+  block-size: 100%;
+}
+
+.stack-large > * + * {
+  margin-block-start: var(--space, 3rem);
+}
+
+.stack-small > * + * {
+  margin-block-end: var(--space, 0.5rem);
+}
+
+/* Remove .exception + * to increase space above */
+
+.stack-exception,
+.stack-exception + * {
+  --space: 3rem;
+}
+
+/* 
+FLOW UTILITY
+Like the Every Layout stack: https://every-layout.dev/layouts/stack/
+Info about this implementation: https://piccalil.li/quick-tip/flow-utility/ 
+*/
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/**
+ * REGION 
+ * Add consistent vertical padding to create regions of content 
+ * Can either be configured by setting --region-space or use a default from the space scale
+ */
+
+.region {
+  padding-top: var(--region-space, var(--space-l-2xl));
+  padding-bottom: var(--region-space, var(--space-l-2xl));
+}
+
+/**
+ * WRAPPER
+ * Sets a max width, adds a consistent gutter and horizontally
+ * centers the contents
+ * Info: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+ */
+
+.wrapper {
+  margin-inline: auto;
+  max-width: var(--wrapper-max-width, 85rem);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  position: relative;
+}
+
+/* Tailwind imports */
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(147 197 253 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(147 197 253 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 50em) {
+  .container {
+    max-width: 50em;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    max-width: 80em;
+  }
+}
+
+:root {
+  --color-ash: #DBDBD5;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-red: #BE5342;
+  --color-yellow: #D3F012;
+  --color-green: #90d997;
+  --color-grey: #d6cdc6;
+  --space-3xs: clamp(0.25rem, 0.23rem + 0.10vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.46rem + 0.19vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.69rem + 0.29vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.38rem + 0.58vw, 1.875rem);
+  --space-l: clamp(2rem, 1.84rem + 0.78vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.77rem + 1.17vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.69rem + 1.55vw, 5rem);
+  --space-3xl: clamp(6rem, 5.53rem + 2.33vw, 7.5rem);
+  --space-xs-s: clamp(0.75rem, 0.59rem + 0.78vw, 1.25rem);
+  --space-s-m: clamp(1rem, 0.73rem + 1.36vw, 1.875rem);
+  --space-m-l: clamp(1.5rem, 1.19rem + 1.55vw, 2.5rem);
+  --space-l-xl: clamp(2rem, 1.46rem + 2.72vw, 3.75rem);
+  --space-l-2xl: clamp(2rem, 1.07rem + 4.66vw, 5rem);
+  --space-xl-2xl: clamp(3rem, 2.38rem + 3.11vw, 5rem);
+  --space-2xl-3xl: clamp(4rem, 2.91rem + 5.44vw, 7.5rem);
+  --space-s-l: clamp(1rem, -1.80rem + 13.98vw, 10rem);
+  --space-m-2xl: clamp(1.5rem, 0.41rem + 5.44vw, 5rem);
+  --size-step-0: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+  --size-step-1: clamp(1.1875rem, 1.01rem + 0.87vw, 1.75rem);
+  --size-step-2: clamp(1.4375rem, 1.11rem + 1.65vw, 2.5rem);
+  --size-step-3: clamp(1.75rem, 1.19rem + 2.82vw, 3.5625rem);
+  --size-step-4: clamp(2.0625rem, 1.15rem + 4.56vw, 5rem);
+  --size-step-5: clamp(2.5rem, 1.08rem + 7.09vw, 7.0625rem);
+  --size-step-6: clamp(3rem, 0.84rem + 10.78vw, 9.9375rem);
+  --font-display: Dela Gothic One,sans-serif;
+  --font-base: Poppins,sans-serif;
+  --font-mono: Inconsolata,monospace;
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 217 151 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 240 18 / var(--tw-bg-opacity));
+}

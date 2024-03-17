@@ -1,0 +1,28 @@
+.tile {
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.tile.bg-white {
+    background-color: #ffffff;
+}
+
+.tile.bg-green {
+    background-color: #D6AB95;
+}
+
+.tile.bg-yellow {
+    background-color: #d3f012;
+}
+
+.tile.bg-dark-grey {
+    background-color: #d6cdc6;
+}

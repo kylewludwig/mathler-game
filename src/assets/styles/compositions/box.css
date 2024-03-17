@@ -1,0 +1,30 @@
+/*
+/* BOX
+/* https://every-layout.dev/layouts/box/
+/*
+/* <div class="box">
+/*   <!-- the box's contents -->
+/* </div>
+*/
+
+.box {
+    /* Padding: The amount by with the Box is padded on all sides */
+    padding: var(--s1);
+    /* Border: The width of the (solid) border. If empty or 0, the transparent outline is instated for high contrast mode. */
+    border: var(--border-thin) solid;
+    /* Theme color: dark and light theme colors */
+    --color-light: #fff;
+    --color-dark: #000;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+  
+  .box * {
+    color: inherit;
+  }
+  
+  /* Inverted color theme */
+  .box.invert {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+  }

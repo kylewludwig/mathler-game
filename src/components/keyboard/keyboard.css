@@ -1,0 +1,34 @@
+#keyboard {
+  user-select: none;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.keyboard__row {
+  display: flex;
+  width: 100%;
+  margin: 0 auto var(--space-2xs);
+  touch-action: manipulation;
+}
+
+.keyboard__key {
+  background-color: var(--color-black);
+  color: var(--color-ash);
+  font-family: var(--font-family-base);
+  font-weight: bold;
+  border: 0;
+  margin: 0 var(--space-2xs) 0 0;
+  height: 3.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.keyboard__key:last-of-type {
+  margin: 0;
+}

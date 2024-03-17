@@ -1,0 +1,26 @@
+button {
+    font-family: inherit;
+    display: inline-block;
+    box-sizing: inline-block;
+    inline-size: auto;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    outline: none;
+    margin-top: 2em;
+    border-width: var(--border-width);
+}
+
+button:hover {
+    transition: border-width var(--transition-base);
+    color: var(--color-white);
+    background: var(--color-black);
+    text-decoration: none;
+    outline: none;
+    opacity: 0.87;
+}
+
+button:disabled {
+    color: var(--color-ash);
+    background: var(--color-grey);
+    cursor: not-allowed;
+}

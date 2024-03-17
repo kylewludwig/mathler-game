@@ -1,0 +1,44 @@
+/*
+/* Stack Example:
+/*
+/* <div class="stack" space="3rem" role="list">
+/*   <h2><!-- heading label --></h2>
+/*   <div class="stack" space="1.5rem" role="list">
+/*     <div role="listitem"><!-- item 1 content --></div>
+/*     <div role="listitem"><!-- item 2 content --></div>
+/*     <div role="listitem"><!-- item 3 content --></div>
+/*   </div>
+/* </div>”
+*/
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+  
+.stack * {
+    margin-block: 0;
+}
+  
+.stack * + * {
+    margin-block-start: var(--space, 1.5rem);
+}
+  
+.stack:only-child {
+    block-size: 100%;
+}
+
+.stack-large > * + * {
+    margin-block-start: var(--space, 3rem);
+}
+
+.stack-small > * + * {
+    margin-block-end: var(--space, 0.5rem);
+}
+
+/* Remove .exception + * to increase space above */
+.stack-exception,
+.stack-exception + * {
+  --space: 3rem;
+}

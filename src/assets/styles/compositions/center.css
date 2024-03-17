@@ -1,0 +1,25 @@
+/*
+/* CENTER
+/* https://every-layout.dev/layouts/center/
+/* 
+/* <div class="center">
+/*   <!-- the centered content -->
+/* </div>
+*/
+
+.center {
+  /* Defaults: minimum required properties */
+  box-sizing: content-box; /* Adds padding outside max-inline-size unlike border-box */
+  margin-inline: auto; /* Centers the element line like margin-left and margin-left */
+  /* Text align: Whether to apply text-align: center, too */
+  text-align: center;
+  /* Max: The maximum width of the centered element */
+  max-inline-size: var(--measure);
+  /* Gutters: The width of the gutters */
+  padding-inline-start: var(--space);
+  padding-inline-end: var(--space);
+  /* Intrinsic centering: Whether to center and child elements narrower than the max value */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}

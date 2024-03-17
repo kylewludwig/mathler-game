@@ -1,0 +1,11 @@
+.toast-message {
+    display: inline-block;
+    position: relative;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: var(--size-step-0);
+    font-weight: 400;
+}

@@ -1,0 +1,20 @@
+section {
+	height: 100dvh;
+	width: 100%;
+	padding: 3rem 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spacer {
+	height: 6rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-align-center {
+	text-align: center;
+}

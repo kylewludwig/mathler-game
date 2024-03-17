@@ -1,0 +1,31 @@
+{
+    "title": "Fonts",
+    "description": "Each array of fonts creates a priority-based order. The first font in the array should be the ideal font, followed by sensible, web-safe fallbacks",
+    "items": [
+        {
+            "name": "Display",
+            "description": "Fonts for title and heading sections.",
+            "value": [
+                "Dela Gothic One", 
+                "sans-serif"
+            ]
+        },
+        {
+            "name": "Base",
+            "description": "System fonts for body copy and globally set text.",
+            "value": [
+                "Poppins",
+                "sans-serif"
+            ]
+        },
+        {
+            "name": "Mono",
+            "description": "Fonts for code sections.",
+            "value": [
+                "Inconsolata",
+                "monospace"
+            ]
+        }
+    ]
+}
+  
