@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Tile } from './tile';
 import { TileStatus, initialTileState } from '../../store/tile/tile-types';
 

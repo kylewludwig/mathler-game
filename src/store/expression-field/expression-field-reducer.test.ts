@@ -1,7 +1,7 @@
 import { expressionFieldReducer } from "./expression-field-reducer";
 import { ExpressionFieldAction } from "./expression-field-actions";
 import { initialExpressionFieldState, ExpressionFieldState } from "./expression-field-types";
-import { TileStatus, initialTileState } from "../tile/tile-types";
+import { TileStatus } from "../tile/tile-types";
 
 describe('expressionFieldReducer', () => {
     it('should add a tile', () => {
@@ -24,6 +24,7 @@ describe('expressionFieldReducer', () => {
     it('should not add more than 5 tiles', () => {
         // Given
         const activeExpressionFieldState: ExpressionFieldState = {
+            error: null,
             tiles: [
                 {
                     value: '1',
@@ -69,6 +70,7 @@ describe('expressionFieldReducer', () => {
     it('should remove a tile', () => {
         // Given
         const activeExpressionFieldState: ExpressionFieldState = {
+            error: null,
             tiles: [
                 {
                     value: '1',
@@ -111,6 +113,7 @@ describe('expressionFieldReducer', () => {
     it('should remain unchanged when less than 5 tiles are submitted', () => {
         // Given
         const finalExpressionFieldState = {
+            error: null,
             tiles: [
                 {
                     value: '1',
@@ -150,6 +153,7 @@ describe('expressionFieldReducer', () => {
     it('should remain unchanged when invalid combinations are submitted', () => {
         // Given
         const finalExpressionFieldState = {
+            error: null,
             tiles: [
                 {
                     value: '1',

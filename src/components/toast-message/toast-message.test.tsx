@@ -1,6 +1,5 @@
 import { ToastMessage } from "./toast-message";
 import { render } from "@testing-library/react";
-import {screen} from '@testing-library/dom'
 
 describe("ToastMessage", () => {
     it("renders without crashing", () => {
