@@ -1,7 +1,8 @@
 #keyboard {
   user-select: none;
+  width: 100%;
   max-width: 42.5rem;
-  padding: var(--space-s) 0;
+  padding-top: var(--space-s);
   margin: 0 auto;
   -webkit-user-select: none;
   -moz-user-select: none;
