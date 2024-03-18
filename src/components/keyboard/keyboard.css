@@ -1,8 +1,8 @@
 #keyboard {
   user-select: none;
-  max-width: 680px;
+  max-width: 42.5rem;
+  padding: var(--space-s) 0;
   margin: 0 auto;
-  /* height: var(--keyboard-height); */
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -39,5 +39,4 @@
 
 .keyboard__key:last-of-type {
   margin: 0;
-  flex-grow: 1;
 }

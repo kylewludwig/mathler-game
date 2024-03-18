@@ -38,7 +38,7 @@ export default function App() {
 
   return (
     <section>
-      <div className='container flow'>
+      <div className='container full-height'>
         <h2 className='text-align-center'>Mathler</h2>
         <Scoreboard targetResult={state.targetResult} remainingAttempts={state.submissions.length - state.currentRowIndex} />
         <GameBoard />
