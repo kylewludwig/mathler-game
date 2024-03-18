@@ -18,17 +18,17 @@
 }
 
 .tile.bg-white {
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 .tile.bg-green {
-    background-color: #D6AB95;
+    background-color: var(--color-green);
 }
 
 .tile.bg-yellow {
-    background-color: #d3f012;
+    background-color: var(--color-yellow);
 }
 
 .tile.bg-dark-grey {
-    background-color: #d6cdc6;
+    background-color: var(--color-grey);
 }
