@@ -25,4 +25,6 @@ section {
 
 .text-align-center {
 	text-align: center;
+	width: 100%;
+	margin: auto;
 }
