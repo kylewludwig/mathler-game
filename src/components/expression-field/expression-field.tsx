@@ -22,7 +22,7 @@ export const ExpressionField: React.FC<ExpressionFieldProps>  = ( { isActive, ro
   }
   
   return (
-    <div className='tile-list'>
+    <div className='board-row'>
       {renderTiles()}
     </div>
   );

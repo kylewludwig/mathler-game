@@ -19,8 +19,10 @@ export const GameBoard: React.FC<GameBoardProps> = () => {
   }
 
   return (
-    <div className="tile-grid">    
-      {renderFields()}
+    <div className='board-container'>
+      <div className="board">    
+        {renderFields()}
+      </div>
     </div>
   );
 };

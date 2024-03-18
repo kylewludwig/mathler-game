@@ -1,7 +1,5 @@
-.tile-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+.board-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: var(--space-2xs);
 }

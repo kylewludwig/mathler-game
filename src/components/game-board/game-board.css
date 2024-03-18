@@ -1,5 +1,15 @@
-.tile-grid {
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.board {
     display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 0.5rem;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: var(--space-2xs);
+    padding: var(--space-xs);
+    box-sizing: border-box;
 }
