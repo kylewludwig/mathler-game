@@ -2,25 +2,33 @@
   user-select: none;
   max-width: 680px;
   margin: 0 auto;
+  /* height: var(--keyboard-height); */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .keyboard__row {
   display: flex;
   width: 100%;
-  margin: 0 auto var(--space-2xs);
+  margin: 0 auto 8px;
   touch-action: manipulation;
 }
 
 .keyboard__key {
+  font-family:  var(--font-family-base);
+  font-size: var(--size-step-0);
+  font-weight: bold;
   background-color: var(--color-black);
   color: var(--color-ash);
-  font-family: var(--font-family-base);
-  font-weight: bold;
   border: 0;
-  margin: 0 var(--space-2xs) 0 0;
+  padding: 0 4px;
+  margin: 0 6px 0 0;
   height: 3.5rem;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   flex: 1;
   display: flex;
@@ -31,4 +39,5 @@
 
 .keyboard__key:last-of-type {
   margin: 0;
+  flex-grow: 1;
 }
