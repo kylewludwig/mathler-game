@@ -111,7 +111,7 @@ https://fonts.google.com/specimen/Dela+Gothic+One
 
   font-display: swap;
 
-  src: url('/fonts/dela-gothic-one-regular.ttf') format('ttf');
+  src: url('./fonts/dela-gothic-one-regular.ttf');
 }
 
 /*
@@ -128,7 +128,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-thin.ttf') format('ttf');
+  src: url('./fonts/poppins-thin.ttf');
 }
 
 @font-face {
@@ -140,7 +140,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-thin-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-thin-italic.ttf');
 }
 
 @font-face {
@@ -152,7 +152,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-extra-light.ttf') format('ttf');
+  src: url('./fonts/poppins-extra-light.ttf');
 }
 
 @font-face {
@@ -164,7 +164,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-extra-light-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-extra-light-italic.ttf');
 }
 
 @font-face {
@@ -176,7 +176,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-light.ttf') format('ttf');
+  src: url('./fonts/poppins-light.ttf');
 }
 
 @font-face {
@@ -186,7 +186,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-weight: 300;
 
-  src: url('/fonts/poppins-light-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-light-italic.ttf');
 }
 
 @font-face {
@@ -198,7 +198,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-regular.ttf') format('ttf');
+  src: url('./fonts/poppins-regular.ttf');
 }
 
 @font-face {
@@ -210,7 +210,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-italic.ttf');
 }
 
 @font-face {
@@ -222,7 +222,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-medium.ttf') format('ttf');
+  src: url('./fonts/poppins-medium.ttf');
 }
 
 @font-face {
@@ -234,7 +234,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-medium-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-medium-italic.ttf');
 }
 
 @font-face {
@@ -246,7 +246,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-semi-bold.ttf') format('ttf');
+  src: url('./fonts/poppins-semi-bold.ttf');
 }
 
 @font-face {
@@ -258,7 +258,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-semi-bold-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-semi-bold-italic.ttf');
 }
 
 @font-face {
@@ -270,7 +270,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-bold.ttf') format('ttf');
+  src: url('./fonts/poppins-bold.ttf');
 }
 
 @font-face {
@@ -282,7 +282,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-bold-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-bold-italic.ttf');
 }
 
 @font-face {
@@ -294,7 +294,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-extra-bold.ttf') format('ttf');
+  src: url('./fonts/poppins-extra-bold.ttf');
 }
 
 @font-face {
@@ -306,7 +306,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-extra-bold-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-extra-bold-italic.ttf');
 }
 
 @font-face {
@@ -318,7 +318,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-black.ttf') format('ttf');
+  src: url('./fonts/poppins-black.ttf');
 }
 
 @font-face {
@@ -330,7 +330,7 @@ https://fonts.google.com/specimen/Poppins
 
   font-display: swap;
 
-  src: url('/fonts/poppins-black-italic.ttf') format('ttf');
+  src: url('./fonts/poppins-black-italic.ttf');
 }
 
 /*
@@ -347,7 +347,7 @@ https://fonts.google.com/specimen/Inconsolata
 
   font-display: swap;
 
-  src: url('/fonts/inconsolata-regular.ttf') format('ttf');
+  src: url('./fonts/inconsolata-regular.ttf');
 }
 
 @font-face {
@@ -359,7 +359,7 @@ https://fonts.google.com/specimen/Inconsolata
 
   font-display: swap;
 
-  src: url('/fonts/inconsolata-bold.ttf') format('ttf');
+  src: url('./fonts/inconsolata-bold.ttf');
 }
 
 /* Global variables */
